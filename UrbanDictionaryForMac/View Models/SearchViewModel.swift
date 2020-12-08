@@ -13,6 +13,7 @@ final class SearchViewModel: ObservableObject, UrbanScraperService {
     var apiSession: APIService
     
     @Published var searchByTermResponse: [SearchByTermResponse]?
+    @Published var isLoaded = false
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -31,7 +32,7 @@ final class SearchViewModel: ObservableObject, UrbanScraperService {
                 }
             } receiveValue: { response in
                 self.searchByTermResponse = response
-                print(response)
+                self.isLoaded = true
             }
             .store(in: &self.cancellables)
 
