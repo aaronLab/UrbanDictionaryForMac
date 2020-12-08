@@ -11,6 +11,10 @@
 		A400FA3C257FB70500953A5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA3B257FB70500953A5A /* ContentView.swift */; };
 		A400FA3E257FB70600953A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A400FA3D257FB70600953A5A /* Assets.xcassets */; };
 		A400FA41257FB70600953A5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A400FA40257FB70600953A5A /* Preview Assets.xcassets */; };
+		A400FA4E257FB77E00953A5A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA4D257FB77E00953A5A /* APIService.swift */; };
+		A400FA52257FB7AC00953A5A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA51257FB7AC00953A5A /* RequestBuilder.swift */; };
+		A400FA55257FB7C000953A5A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA54257FB7C000953A5A /* APIError.swift */; };
+		A400FA58257FB7DB00953A5A /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA57257FB7DB00953A5A /* APISession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		A400FA40257FB70600953A5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A400FA42257FB70600953A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A400FA43257FB70600953A5A /* UrbanDictionaryForMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UrbanDictionaryForMac.entitlements; sourceTree = "<group>"; };
+		A400FA4D257FB77E00953A5A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A400FA51257FB7AC00953A5A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		A400FA54257FB7C000953A5A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A400FA57257FB7DB00953A5A /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +61,8 @@
 		A400FA38257FB70500953A5A /* UrbanDictionaryForMac */ = {
 			isa = PBXGroup;
 			children = (
-				A400FA39257FB70500953A5A /* UrbanDictionaryForMacApp.swift */,
-				A400FA3B257FB70500953A5A /* ContentView.swift */,
-				A400FA3D257FB70600953A5A /* Assets.xcassets */,
-				A400FA42257FB70600953A5A /* Info.plist */,
-				A400FA43257FB70600953A5A /* UrbanDictionaryForMac.entitlements */,
-				A400FA3F257FB70600953A5A /* Preview Content */,
+				A400FA4A257FB72800953A5A /* Application */,
+				A400FA4B257FB73500953A5A /* Core */,
 			);
 			path = UrbanDictionaryForMac;
 			sourceTree = "<group>";
@@ -69,6 +73,46 @@
 				A400FA40257FB70600953A5A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A400FA4A257FB72800953A5A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A400FA39257FB70500953A5A /* UrbanDictionaryForMacApp.swift */,
+				A400FA3B257FB70500953A5A /* ContentView.swift */,
+				A400FA3D257FB70600953A5A /* Assets.xcassets */,
+				A400FA42257FB70600953A5A /* Info.plist */,
+				A400FA43257FB70600953A5A /* UrbanDictionaryForMac.entitlements */,
+				A400FA3F257FB70600953A5A /* Preview Content */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		A400FA4B257FB73500953A5A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A400FA4C257FB73D00953A5A /* API */,
+				A400FA5A257FB88800953A5A /* Services */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		A400FA4C257FB73D00953A5A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A400FA4D257FB77E00953A5A /* APIService.swift */,
+				A400FA57257FB7DB00953A5A /* APISession.swift */,
+				A400FA51257FB7AC00953A5A /* RequestBuilder.swift */,
+				A400FA54257FB7C000953A5A /* APIError.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		A400FA5A257FB88800953A5A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A400FA3C257FB70500953A5A /* ContentView.swift in Sources */,
+				A400FA4E257FB77E00953A5A /* APIService.swift in Sources */,
 				A400FA3A257FB70500953A5A /* UrbanDictionaryForMacApp.swift in Sources */,
+				A400FA55257FB7C000953A5A /* APIError.swift in Sources */,
+				A400FA52257FB7AC00953A5A /* RequestBuilder.swift in Sources */,
+				A400FA58257FB7DB00953A5A /* APISession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
