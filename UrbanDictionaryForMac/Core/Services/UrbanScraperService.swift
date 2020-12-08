@@ -27,13 +27,13 @@ protocol UrbanScraperService {
     
     var apiSession: APIService { get }
     
-    func searchByTerm(term: String) -> AnyPublisher<SearchByTermResponse, APIError>
+    func searchByTerm(term: String) -> AnyPublisher<[SearchByTermResponse], APIError>
     
 }
 
 extension UrbanScraperService {
     
-    func searchByTerm(term: String) -> AnyPublisher<SearchByTermResponse, APIError> {
+    func searchByTerm(term: String) -> AnyPublisher<[SearchByTermResponse], APIError> {
         return apiSession.request(with: UrbanScraperEndpoint.searchByTerm(term: term))
             .eraseToAnyPublisher()
     }
