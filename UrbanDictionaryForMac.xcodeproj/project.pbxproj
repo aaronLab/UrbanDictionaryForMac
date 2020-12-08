@@ -17,6 +17,7 @@
 		A400FA58257FB7DB00953A5A /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA57257FB7DB00953A5A /* APISession.swift */; };
 		A400FA63257FB91F00953A5A /* UrbanScraperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA62257FB91F00953A5A /* UrbanScraperService.swift */; };
 		A400FA68257FBBBC00953A5A /* SearchByTermResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA67257FBBBC00953A5A /* SearchByTermResponse.swift */; };
+		A400FA6D257FBDB100953A5A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA6C257FBDB100953A5A /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A400FA57257FB7DB00953A5A /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 		A400FA62257FB91F00953A5A /* UrbanScraperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanScraperService.swift; sourceTree = "<group>"; };
 		A400FA67257FBBBC00953A5A /* SearchByTermResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByTermResponse.swift; sourceTree = "<group>"; };
+		A400FA6C257FBDB100953A5A /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				A400FA4A257FB72800953A5A /* Application */,
+				A400FA6B257FBD8A00953A5A /* View Models */,
 				A400FA66257FBBAE00953A5A /* Models */,
 				A400FA5E257FB8D800953A5A /* Core */,
 			);
@@ -127,6 +130,14 @@
 				A400FA67257FBBBC00953A5A /* SearchByTermResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A400FA6B257FBD8A00953A5A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				A400FA6C257FBDB100953A5A /* SearchViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				A400FA3A257FB70500953A5A /* UrbanDictionaryForMacApp.swift in Sources */,
 				A400FA55257FB7C000953A5A /* APIError.swift in Sources */,
 				A400FA68257FBBBC00953A5A /* SearchByTermResponse.swift in Sources */,
+				A400FA6D257FBDB100953A5A /* SearchViewModel.swift in Sources */,
 				A400FA52257FB7AC00953A5A /* RequestBuilder.swift in Sources */,
 				A400FA58257FB7DB00953A5A /* APISession.swift in Sources */,
 			);
