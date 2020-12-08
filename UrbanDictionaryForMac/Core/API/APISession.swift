@@ -10,10 +10,10 @@ import Combine
 
 struct APISession: APIService {
     
-    func request<T>(with builder: RequestBuilder) -> AnyPublisher<T, APIError> where T : Decodable {
+    func request<T>(with request: URLRequest) -> AnyPublisher<T, APIError> where T : Decodable {
         
         return URLSession.shared
-            .dataTaskPublisher(for: builder.urlRequest)
+            .dataTaskPublisher(for: request)
             .receive(on: RunLoop.main)
             .mapError { _ in .unknown }
             .flatMap { data, response -> AnyPublisher<T, APIError> in
