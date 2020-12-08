@@ -15,7 +15,8 @@
 		A400FA52257FB7AC00953A5A /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA51257FB7AC00953A5A /* RequestBuilder.swift */; };
 		A400FA55257FB7C000953A5A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA54257FB7C000953A5A /* APIError.swift */; };
 		A400FA58257FB7DB00953A5A /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA57257FB7DB00953A5A /* APISession.swift */; };
-		A400FA63257FB91F00953A5A /* UrbanScraperEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA62257FB91F00953A5A /* UrbanScraperEndpoint.swift */; };
+		A400FA63257FB91F00953A5A /* UrbanScraperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA62257FB91F00953A5A /* UrbanScraperService.swift */; };
+		A400FA68257FBBBC00953A5A /* SearchByTermResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400FA67257FBBBC00953A5A /* SearchByTermResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,8 @@
 		A400FA51257FB7AC00953A5A /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		A400FA54257FB7C000953A5A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		A400FA57257FB7DB00953A5A /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
-		A400FA62257FB91F00953A5A /* UrbanScraperEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanScraperEndpoint.swift; sourceTree = "<group>"; };
+		A400FA62257FB91F00953A5A /* UrbanScraperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanScraperService.swift; sourceTree = "<group>"; };
+		A400FA67257FBBBC00953A5A /* SearchByTermResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByTermResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A400FA4A257FB72800953A5A /* Application */,
+				A400FA66257FBBAE00953A5A /* Models */,
 				A400FA5E257FB8D800953A5A /* Core */,
 			);
 			path = UrbanDictionaryForMac;
@@ -113,9 +116,17 @@
 		A400FA60257FB8EE00953A5A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A400FA62257FB91F00953A5A /* UrbanScraperEndpoint.swift */,
+				A400FA62257FB91F00953A5A /* UrbanScraperService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A400FA66257FBBAE00953A5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A400FA67257FBBBC00953A5A /* SearchByTermResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A400FA63257FB91F00953A5A /* UrbanScraperEndpoint.swift in Sources */,
+				A400FA63257FB91F00953A5A /* UrbanScraperService.swift in Sources */,
 				A400FA3C257FB70500953A5A /* ContentView.swift in Sources */,
 				A400FA4E257FB77E00953A5A /* APIService.swift in Sources */,
 				A400FA3A257FB70500953A5A /* UrbanDictionaryForMacApp.swift in Sources */,
 				A400FA55257FB7C000953A5A /* APIError.swift in Sources */,
+				A400FA68257FBBBC00953A5A /* SearchByTermResponse.swift in Sources */,
 				A400FA52257FB7AC00953A5A /* RequestBuilder.swift in Sources */,
 				A400FA58257FB7DB00953A5A /* APISession.swift in Sources */,
 			);
