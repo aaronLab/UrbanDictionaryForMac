@@ -11,7 +11,7 @@ import Combine
 final class UrbanScraperEndpoint {
     
     static func searchByTerm(term: String) -> URLRequest {
-        let queryString = term.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        let queryString = term.lowercased().addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         
         guard let url = URL(string: "https://urbanscraper.herokuapp.com/search/\(queryString)")
         

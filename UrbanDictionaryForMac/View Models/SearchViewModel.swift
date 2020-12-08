@@ -31,6 +31,7 @@ final class SearchViewModel: ObservableObject, UrbanScraperService {
                 }
             } receiveValue: { response in
                 self.searchByTermResponse = response
+                print(response)
             }
             .store(in: &self.cancellables)
 
