@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				A400FA4A257FB72800953A5A /* Application */,
-				A400FA4B257FB73500953A5A /* Core */,
+				A400FA5E257FB8D800953A5A /* Core */,
 			);
 			path = UrbanDictionaryForMac;
 			sourceTree = "<group>";
@@ -88,16 +88,16 @@
 			name = Application;
 			sourceTree = "<group>";
 		};
-		A400FA4B257FB73500953A5A /* Core */ = {
+		A400FA5E257FB8D800953A5A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A400FA4C257FB73D00953A5A /* API */,
-				A400FA5A257FB88800953A5A /* Services */,
+				A400FA5F257FB8DF00953A5A /* API */,
+				A400FA60257FB8EE00953A5A /* Services */,
 			);
-			name = Core;
+			path = Core;
 			sourceTree = "<group>";
 		};
-		A400FA4C257FB73D00953A5A /* API */ = {
+		A400FA5F257FB8DF00953A5A /* API */ = {
 			isa = PBXGroup;
 			children = (
 				A400FA4D257FB77E00953A5A /* APIService.swift */,
@@ -105,14 +105,14 @@
 				A400FA51257FB7AC00953A5A /* RequestBuilder.swift */,
 				A400FA54257FB7C000953A5A /* APIError.swift */,
 			);
-			name = API;
+			path = API;
 			sourceTree = "<group>";
 		};
-		A400FA5A257FB88800953A5A /* Services */ = {
+		A400FA60257FB8EE00953A5A /* Services */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
